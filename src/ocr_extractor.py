@@ -1,11 +1,11 @@
-import os, unicodedata
+import unicodedata
 from dotenv import load_dotenv
 import fitz  # PyMuPDF
 
 load_dotenv()
 
 # --- Set PyMuPDF TESSDATA path ---
-fitz.TESSDATA_PREFIX = os.getenv("TESSDATA_PREFIX")
+fitz.TESSDATA_PREFIX = 'C:\\Program Files\\Tesseract-OCR\\tessdata'
 
 
 def extract_pdf_data(file_path):
